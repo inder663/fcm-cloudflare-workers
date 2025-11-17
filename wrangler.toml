@@ -1,0 +1,14 @@
+name = "fcm-cloudflare-workers"
+compatibility_date = "2024-07-01"
+
+main = "./fixtures/index.ts"
+
+[vars]
+# The necessary secrets are:
+# - FIREBASE_PROJECT_ID
+# - FIREBASE_SERVICE_ACCOUNT_JSON
+
+[[kv_namespaces]]
+binding = "MY_WORKER_CACHE"
+id = "83b47bb123674897a36670b288886bf0"
+preview_id = "test-id"
